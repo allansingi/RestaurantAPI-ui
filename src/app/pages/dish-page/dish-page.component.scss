@@ -1,0 +1,8 @@
+.page { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+.card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+.table { width: 100%; border-collapse: collapse; }
+th, td { padding: .6rem .7rem; border-bottom: 1px solid #eee; text-align: left; }
+th { background: #fafafa; font-weight: 600; }
+.error { color: #b00020; margin-bottom: .5rem; }
+.loading { opacity: .8; margin-bottom: .5rem; }
+.muted { color: #777; }
