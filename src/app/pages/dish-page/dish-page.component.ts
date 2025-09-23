@@ -8,8 +8,7 @@ import { Dish } from '../../models/dish';
     selector: 'app-restaurant-page',
     standalone: true,
     imports: [CommonModule],
-    templateUrl: './dish-page.component.html',
-    styleUrls: ['./dish-page.component.css']
+    templateUrl: './dish-page.component.html'
 })
 export class DishPageComponent {
     private api = inject(DishService);
