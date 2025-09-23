@@ -3,7 +3,7 @@ import { DishPageComponent } from './pages/dish-page/dish-page.component';
 
 
 export const routes: Routes = [
-{ path: '', pathMatch: 'full', redirectTo: 'dishes' },
-{ path: 'dishes', component: DishPageComponent },
-{ path: '**', redirectTo: 'dishes' }
+    { path: '', pathMatch: 'full', redirectTo: 'dishes' },
+    { path: 'dishes', component: DishPageComponent },
+    { path: '**', redirectTo: 'dishes' }
 ];
