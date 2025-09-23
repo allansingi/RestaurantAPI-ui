@@ -5,5 +5,6 @@ export interface Dish {
     price: number;
     stock: number;
     code: String;
-    createdDate: Date
+    createdDate: Date,
+    imageUrl: String
     }
