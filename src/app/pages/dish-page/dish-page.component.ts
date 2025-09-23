@@ -9,7 +9,7 @@ import { Dish } from '../../models/dish';
     standalone: true,
     imports: [CommonModule],
     templateUrl: './dish-page.component.html',
-    styleUrls: ['./dish-page.component.scss']
+    styleUrls: ['./dish-page.component.css']
 })
 export class DishPageComponent {
     private api = inject(DishService);

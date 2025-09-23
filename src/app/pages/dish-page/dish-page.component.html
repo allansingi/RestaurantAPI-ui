@@ -1,10 +1,8 @@
 <div class="page">
-    <h1>Dishes - Menu</h1>
-
+    <h1 class="text-2xl font-semibold text-blue-600 mb-4">Dishes - Menu</h1>
 
     <div *ngIf="error()" class="error">{{ error() }}</div>
     <div *ngIf="loading()" class="loading">Loading…</div>
-
 
     <div class="card" *ngIf="!loading()">
         <table class="table">
