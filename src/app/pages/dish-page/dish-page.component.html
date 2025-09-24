@@ -1,4 +1,3 @@
-<!-- src/app/pages/dish-page/dish-page.component.html -->
 <div class="min-h-screen bg-neutral-50">
 
     <!-- Sticky header with HERO + filters -->
@@ -150,12 +149,10 @@
                                     </button>
                                 </th>
                                 <th class="px-4 py-3 text-left font-medium">
-                                    <button class="inline-flex items-center gap-1 hover:underline"
-                                        (click)="toggleSort('code')">
+                                    <button class="inline-flex items-center gap-1 hover:underline" (click)="toggleSort('code.code')">
                                         Code
-                                        <span class="text-xs"
-                                            [class.opacity-30]="!isSorted('code','ASC') && !isSorted('code','DESC')">
-                                            {{ isSorted('code','ASC') ? '▲' : (isSorted('code','DESC') ? '▼' : '↕') }}
+                                        <span class="text-xs" [class.opacity-30]="!isSorted('code.code','ASC') && !isSorted('code.code','DESC')">
+                                            {{ isSorted('code.code','ASC') ? '▲' : (isSorted('code.code','DESC') ? '▼' : '↕') }}
                                         </span>
                                     </button>
                                 </th>
@@ -199,7 +196,7 @@
                               }">
                                         {{ r.stock === 0 ? 'Sold out' : (r.stock <= 10 ? 'Low' : 'In stock' ) }} </span>
                                 </td>
-                                <td class="px-4 py-3 text-gray-700">{{ r.code }}</td>
+                                <td class="px-4 py-3 text-gray-700">{{ r.code.code }}</td>
                                 <td class="px-4 py-3 text-gray-600">{{ r.createdDate | date:'yyyy-MM-dd' }}</td>
                             </tr>
                             } @empty {

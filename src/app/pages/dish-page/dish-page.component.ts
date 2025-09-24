@@ -1,4 +1,3 @@
-// src/app/pages/dish-page/dish-page.component.ts
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule, NgClass } from '@angular/common';
 import { DishService } from '../../services/dish.service';
